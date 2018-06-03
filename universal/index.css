@@ -33,10 +33,33 @@ ul {
   top: 0; }
 
 .model-thumb-wrapper {
-  opacity: 0.4;
-  transition: opacity .2s; }
+  opacity: 0.9;
+  transition: opacity 0.2s; }
   .model-thumb-wrapper:hover {
     opacity: 1; }
+    .model-thumb-wrapper:hover .model-list-item-control {
+      display: flex; }
+
+.model-list-item-control {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  display: none; }
+  .model-list-item-control .icon-wrapper {
+    border-radius: 50%;
+    padding: 25px;
+    background-color: rgba(0, 0, 0, 0.3); }
+  .model-list-item-control .icon {
+    height: 80px;
+    width: 80px;
+    fill: #fff; }
+  .model-list-item-control .icon-stop {
+    height: 50px;
+    width: 50px; }
 
 .model-list-item-footer {
   align-items: center;
